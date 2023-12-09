@@ -3,9 +3,13 @@
 
 void setup() {
  // 2. Set the size of the sketch to be 500 x 500
-
+size(500,500);
  // The following code loads the image into the program
   PImage baby = loadImage("fistPump.png");
+  baby.resize(500,500);
+  background(baby);
+  textSize(48);
+  text("TESTED MY PROGRAM",50,50);
   
   // 3. Resize the baby image to be the same size as the sketch
   //    Use the baby.resize() command for this
